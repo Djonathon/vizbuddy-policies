@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — VizBuddy</title>
+  <style>
+    :root {
+      --blue: #0285CF;
+      --green: #1A8754;
+      --dark: #0f1117;
+      --text: #1a1f2e;
+      --muted: #6b7280;
+      --light: #f0f4f9;
+      --border: #e0e8f0;
+      --white: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      padding: 18px 48px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .nav-logo {
+      font-weight: 700; font-size: 17px;
+      color: var(--text); text-decoration: none;
+      display: flex; align-items: center; gap: 8px;
+    }
+
+    .nav-logo span { color: var(--blue); }
+
+    .nav-home {
+      font-size: 13px; color: var(--muted);
+      text-decoration: none; font-weight: 500;
+    }
+
+    .nav-home:hover { color: var(--blue); }
+
+    /* HERO */
+    .hero {
+      background: var(--light);
+      padding: 56px 48px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-inner { max-width: 760px; margin: 0 auto; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #EFF6FF; border: 1px solid #bdd9f5;
+      border-radius: 20px; padding: 5px 14px;
+      font-size: 12px; font-weight: 600; color: var(--blue);
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: 36px; font-weight: 800;
+      color: var(--dark); letter-spacing: -0.02em;
+      margin-bottom: 12px; line-height: 1.15;
+    }
+
+    .hero-meta {
+      font-size: 14px; color: var(--muted);
+      display: flex; gap: 24px; flex-wrap: wrap;
+    }
+
+    .hero-meta span { display: flex; align-items: center; gap: 6px; }
+
+    /* CONTENT */
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 48px 80px;
+    }
+
+    .intro-box {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 18px 20px;
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-top: 44px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .section-num {
+      width: 28px; height: 28px;
+      background: var(--blue); color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    p {
+      font-size: 15px;
+      color: #374151;
+      margin-bottom: 14px;
+      line-height: 1.75;
+    }
+
+    ul {
+      margin: 10px 0 16px 0;
+      padding-left: 20px;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: #374151;
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .highlight-box {
+      background: #fffbf0;
+      border: 1px solid #f0d080;
+      border-left: 4px solid #f0a500;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 18px;
+      font-size: 14px;
+      color: #555;
+      margin: 16px 0;
+      line-height: 1.6;
+    }
+
+    .important-box {
+      background: #fbeaea;
+      border: 1px solid #f5c0c0;
+      border-left: 4px solid #e05252;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 18px;
+      font-size: 14px;
+      color: #555;
+      margin: 16px 0;
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    strong { color: var(--dark); font-weight: 600; }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      padding: 28px 48px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+
+    footer p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      margin: 0;
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.5);
+      font-size: 13px;
+    }
+
+    footer a:hover { color: white; }
+
+    .footer-links {
+      display: flex; gap: 20px;
+    }
+
+    .gradient-bar {
+      height: 4px;
+      background: linear-gradient(90deg, #0285CF 0%, #1A8754 100%);
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 14px 20px; }
+      .hero { padding: 36px 20px 32px; }
+      .content { padding: 36px 20px 60px; }
+      footer { padding: 24px 20px; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="https://vizbuddy.plotstack.dev" class="nav-logo">
+      📊 Viz<span>Buddy</span>
+    </a>
+    <a href="https://vizbuddy.plotstack.dev" class="nav-home">← Back to VizBuddy</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">📄 Legal</div>
+      <h1>Terms of Service</h1>
+      <div class="hero-meta">
+        <span>📅 Effective date: May 2026</span>
+        <span>🔄 Last updated: May 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <div class="intro-box">
+      These Terms of Service govern your use of VizBuddy, a Chrome extension built and operated by Dmitri Spiropoulos ("we," "us," or "our") under the PlotStack brand. By installing or using VizBuddy, you agree to these terms. Please read them carefully before using the service.
+    </div>
+
+    <!-- 1 -->
+    <h2><span class="section-num">1</span> Acceptance of Terms</h2>
+    <p>By installing VizBuddy from the Chrome Web Store or accessing any part of the service, you confirm that you have read, understood, and agree to be bound by these Terms of Service and our <a href="https://vizbuddy.plotstack.dev/privacy">Privacy Policy</a>.</p>
+    <p>If you do not agree to these terms, please uninstall the extension and discontinue use of the service.</p>
+
+    <!-- 2 -->
+    <h2><span class="section-num">2</span> Description of Service</h2>
+    <p>VizBuddy is a Chrome browser extension that captures a screenshot of your active browser tab and sends it to a third-party AI service (Anthropic's Claude API) to generate an analyst-style summary of the visual content on screen. The service includes:</p>
+    <ul>
+      <li>Structured analysis output — Headline, Summary, Watch Out For, and Confidence rating</li>
+      <li>Compose This — a feature that transforms analysis into a ready-to-send message in multiple tones</li>
+      <li>Analysis history — session-based for free users, 30-day persistent for Pro users</li>
+    </ul>
+    <p>VizBuddy requires an active internet connection and a compatible version of Google Chrome to function.</p>
+
+    <!-- 3 -->
+    <h2><span class="section-num">3</span> Free and Pro Tiers</h2>
+    <p>VizBuddy is available in two tiers:</p>
+    <ul>
+      <li><strong>Free tier</strong> — 5 analyses per day, 2 Compose This uses per day, session-only history. No account or credit card required.</li>
+      <li><strong>Pro tier</strong> — 20 analyses per day, unlimited Compose This, 30 days of persistent cross-device history. Requires a paid subscription.</li>
+    </ul>
+    <p>We reserve the right to modify the features included in each tier at any time. We will provide reasonable notice of material changes to existing subscribers.</p>
+
+    <!-- 4 -->
+    <h2><span class="section-num">4</span> Payment and Billing</h2>
+    <p>Pro subscriptions are billed on a recurring basis — monthly at $12.00 USD per month, or annually at $99.00 USD per year. All payments are processed securely by Stripe. By subscribing to Pro, you authorize us to charge your payment method on a recurring basis until you cancel.</p>
+    <p>Your subscription renews automatically on the anniversary of your billing date unless cancelled before the renewal date. You can cancel at any time through your account settings.</p>
+    <div class="highlight-box">
+      <strong>Refund policy:</strong> We offer a 7-day refund window from the date of your initial Pro subscription purchase. After 7 days, payments are non-refundable. Annual subscriptions cancelled after the 7-day window will not be refunded for the remaining unused period.
+    </div>
+    <p>All prices are in USD and do not include applicable taxes. You are responsible for any taxes applicable to your purchase under the laws of your jurisdiction.</p>
+
+    <!-- 5 -->
+    <h2><span class="section-num">5</span> Acceptable Use</h2>
+    <p>You agree to use VizBuddy only for lawful purposes and in accordance with these terms. You agree not to:</p>
+    <ul>
+      <li>Reverse engineer, decompile, or attempt to extract the source code of VizBuddy</li>
+      <li>Resell, sublicense, or provide access to VizBuddy to third parties as a service</li>
+      <li>Use VizBuddy to capture or analyze content you do not have permission to access</li>
+      <li>Attempt to circumvent daily usage limits or subscription restrictions</li>
+      <li>Use VizBuddy in any way that violates applicable laws or regulations</li>
+      <li>Use VizBuddy to analyze content that is illegal, harmful, or violates third-party rights</li>
+    </ul>
+
+    <!-- 6 -->
+    <h2><span class="section-num">6</span> Data and Privacy</h2>
+    <p>Your privacy matters to us. Here is how your data is handled in plain terms:</p>
+    <ul>
+      <li><strong>Screenshots:</strong> Screenshots captured by VizBuddy are transmitted directly to Anthropic's API to generate your analysis. They are not stored on our servers and are not retained after the API call completes.</li>
+      <li><strong>Analysis results:</strong> For Pro users, analysis text results (Headline, Summary, Watch Out For, Confidence) are stored in our database to power the 30-day history feature. Screenshots are never stored.</li>
+      <li><strong>Account data:</strong> Pro users provide an email address to create an account. This is stored securely in our database and used solely for authentication and subscription management.</li>
+      <li><strong>Analytics:</strong> We collect anonymous usage events (analyses run, features used) via PostHog to understand how VizBuddy is used. No personally identifiable information is attached to these events.</li>
+    </ul>
+    <p>For full details please review our <a href="https://vizbuddy.plotstack.dev/privacy">Privacy Policy</a>.</p>
+
+    <!-- 7 -->
+    <h2><span class="section-num">7</span> Third-Party Services</h2>
+    <p>VizBuddy relies on the following third-party services to operate:</p>
+    <ul>
+      <li><strong>Anthropic Claude API</strong> — powers the AI analysis. Subject to <a href="https://www.anthropic.com/legal/consumer-terms" target="_blank">Anthropic's Terms of Service</a>.</li>
+      <li><strong>Stripe</strong> — processes payments for Pro subscriptions. Subject to <a href="https://stripe.com/legal" target="_blank">Stripe's Terms of Service</a>.</li>
+      <li><strong>Supabase</strong> — stores Pro user account and history data securely.</li>
+      <li><strong>PostHog</strong> — collects anonymous usage analytics.</li>
+    </ul>
+    <p>We are not responsible for the availability, accuracy, or reliability of these third-party services. If a third-party service experiences an outage, VizBuddy may be temporarily unavailable or degraded. We will not issue refunds for downtime caused by third-party service outages.</p>
+
+    <!-- 8 -->
+    <h2><span class="section-num">8</span> AI Output Disclaimer</h2>
+    <div class="important-box">
+      <strong>Important:</strong> The analysis generated by VizBuddy is produced by an AI model and is provided for informational purposes only. It may contain errors, omissions, or inaccuracies. VizBuddy analysis should not be relied upon as professional financial, legal, business, medical, or investment advice. Always verify AI-generated insights independently before making decisions based on them.
+    </div>
+    <p>We make no warranty that the analysis produced by VizBuddy is accurate, complete, or suitable for any particular purpose. The quality of analysis depends on the clarity, completeness, and legibility of the visual content on your screen.</p>
+
+    <!-- 9 -->
+    <h2><span class="section-num">9</span> Intellectual Property</h2>
+    <p>VizBuddy, including its name, logo, branding, code, and all associated materials, is owned by Dmitri Spiropoulos and protected by applicable intellectual property laws. You may not use the VizBuddy name, logo, or branding without our prior written consent.</p>
+    <p>You retain full ownership of any data, dashboards, or content you analyze using VizBuddy. We claim no ownership over your screen content or the analysis results generated from it.</p>
+
+    <!-- 10 -->
+    <h2><span class="section-num">10</span> Disclaimer of Warranties</h2>
+    <p>VizBuddy is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not warrant that:</p>
+    <ul>
+      <li>VizBuddy will be available at all times or free from errors</li>
+      <li>The AI analysis will be accurate, complete, or suitable for your purposes</li>
+      <li>VizBuddy will be compatible with all versions of Chrome or all websites</li>
+      <li>Any defects or errors will be corrected</li>
+    </ul>
+    <p>Your use of VizBuddy is at your sole risk.</p>
+
+    <!-- 11 -->
+    <h2><span class="section-num">11</span> Limitation of Liability</h2>
+    <p>To the fullest extent permitted by applicable law, Dmitri Spiropoulos and PlotStack shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of VizBuddy, including but not limited to loss of data, loss of profits, or business interruption.</p>
+    <p>Our total liability to you for any claims arising from your use of VizBuddy shall not exceed the total amount you paid us in the twelve months preceding the claim, or $12.00 USD if you have not made any payments.</p>
+
+    <!-- 12 -->
+    <h2><span class="section-num">12</span> Termination</h2>
+    <p>You may stop using VizBuddy at any time by uninstalling the extension and cancelling your Pro subscription if applicable.</p>
+    <p>We reserve the right to suspend or terminate your access to VizBuddy at any time if we determine you have violated these terms, with or without notice. If your account is terminated for a violation, you will not be entitled to a refund.</p>
+    <p>Upon termination of a Pro subscription, your persistent history will remain accessible in read-only mode for 30 days before being permanently deleted.</p>
+
+    <!-- 13 -->
+    <h2><span class="section-num">13</span> Changes to These Terms</h2>
+    <p>We may update these Terms of Service from time to time. When we make material changes we will update the "Last updated" date at the top of this page and notify active Pro subscribers by email at least 14 days before the changes take effect.</p>
+    <p>Your continued use of VizBuddy after the effective date of any changes constitutes your acceptance of the updated terms.</p>
+
+    <!-- 14 -->
+    <h2><span class="section-num">14</span> Governing Law</h2>
+    <p>These Terms of Service are governed by the laws of the State of California, United States, without regard to its conflict of law provisions. Any disputes arising from these terms or your use of VizBuddy shall be resolved in the courts located in California.</p>
+
+    <!-- 15 -->
+    <h2><span class="section-num">15</span> Contact</h2>
+    <p>If you have questions about these Terms of Service, please contact us at:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:hello@plotstack.dev">hello@plotstack.dev</a></li>
+      <li><strong>Website:</strong> <a href="https://vizbuddy.plotstack.dev">vizbuddy.plotstack.dev</a></li>
+    </ul>
+
+  </div>
+
+  <div class="gradient-bar"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 VizBuddy · Built by <a href="https://plotstack.dev">PlotStack</a></p>
+    <div class="footer-links">
+      <a href="https://vizbuddy.plotstack.dev/privacy">Privacy Policy</a>
+      <a href="https://vizbuddy.plotstack.dev/terms">Terms of Service</a>
+      <a href="https://vizbuddy.plotstack.dev">Back to VizBuddy</a>
+    </div>
+  </footer>
+
+</body>
+</html>
